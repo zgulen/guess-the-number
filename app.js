@@ -1,1 +1,58 @@
-var _0xa36b=["\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x69\x6E\x70\x75\x74\x44\x61\x74\x61","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x69\x6E\x66\x6F","\x66\x69\x72\x73\x74\x4E\x75\x6D\x62\x65\x72","\x73\x65\x63\x6F\x6E\x64\x4E\x75\x6D\x62\x65\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x6E\x75\x6D\x62\x65\x72\x20\x6F\x66\x20\x61\x74\x74\x65\x6D\x70\x74\x3A\x20","\x20\x3C\x62\x72\x3E\x3C\x62\x72\x3E\x20\x59\x6F\x75\x20\x68\x61\x76\x65\x20\x6F\x6E\x6C\x79\x20\x68\x61\x76\x65\x20","\x20\x63\x68\x61\x6E\x63\x65","\x69\x6E\x70\x75\x74","\x59\x6F\x75\x20\x68\x61\x76\x65\x20\x4C\x6F\x73\x74","\x20\x3C\x62\x72\x3E\x3C\x62\x72\x3E\x20\x59\x6F\x75\x20\x64\x6F\x6E\x74\x20\x68\x61\x76\x65\x20\x61\x6E\x79\x20\x63\x68\x61\x6E\x63\x65","\x76\x61\x6C\x75\x65","","\x50\x6C\x65\x61\x73\x65\x20\x65\x6E\x74\x65\x72\x20\x61\x20\x6E\x75\x6D\x62\x65\x72\x20\x74\x68\x61\x74\x20\x69\x73\x20\x6C\x6F\x77\x65\x72\x20\x31\x30\x30\x20\x68\x69\x67\x68\x65\x72\x20\x30","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6E\x6F\x6E\x65","\x43\x6F\x6E\x67\x72\x61\x74\x75\x6C\x61\x74\x69\x6F\x6E\x73\x2C\x20\x59\x6F\x75\x20\x61\x72\x65\x20\x74\x68\x65\x20\x42\x65\x73\x74","\x2E\x68\x65\x61\x64\x65\x72","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x6A\x6F\x69\x6E","\x6C\x6F\x67","\x3C\x73\x70\x61\x6E\x3E","\x3C\x2F\x73\x70\x61\x6E\x3E","\x6D\x61\x70","\x73\x70\x6C\x69\x74","\x77\x61\x76\x79","\x61\x64\x64","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x66\x6F\x72\x45\x61\x63\x68","\x63\x68\x69\x6C\x64\x72\x65\x6E","\x66\x72\x6F\x6D"];const number=Math[_0xa36b[1]](Math[_0xa36b[0]]()* 100)+ 1;let inputData=document[_0xa36b[3]](_0xa36b[2]);let info=document[_0xa36b[3]](_0xa36b[4]);let firstNumber=document[_0xa36b[3]](_0xa36b[5]);let secondNumber=document[_0xa36b[3]](_0xa36b[6]);let life=0;let chance=5;info[_0xa36b[7]]= `${_0xa36b[8]}${life}${_0xa36b[9]}${chance}${_0xa36b[10]}`;function guessNumber(){let _0x336bx9=document[_0xa36b[3]](_0xa36b[11]);chance--;life++;if(chance>= 0){if(chance== 0){updateText(_0xa36b[12]);info[_0xa36b[7]]= `${_0xa36b[8]}${life}${_0xa36b[13]}`};if(_0x336bx9[_0xa36b[14]]> 100|| _0x336bx9[_0xa36b[14]]< 0|| _0x336bx9[_0xa36b[14]]== _0xa36b[15]){inputData[_0xa36b[7]]= `${_0xa36b[16]}`;chance++;life--}else {if(number> _0x336bx9[_0xa36b[14]]){inputData[_0xa36b[7]]= _0x336bx9[_0xa36b[14]];_0x336bx9[_0xa36b[14]]= _0xa36b[15];inputData[_0xa36b[18]][_0xa36b[17]]= _0xa36b[19];firstNumber[_0xa36b[7]]= inputData[_0xa36b[7]];info[_0xa36b[7]]= `${_0xa36b[8]}${life}${_0xa36b[9]}${chance}${_0xa36b[10]}`}else {if(number< _0x336bx9[_0xa36b[14]]){inputData[_0xa36b[7]]= _0x336bx9[_0xa36b[14]];_0x336bx9[_0xa36b[14]]= _0xa36b[15];inputData[_0xa36b[18]][_0xa36b[17]]= _0xa36b[19];secondNumber[_0xa36b[7]]= inputData[_0xa36b[7]];info[_0xa36b[7]]= `${_0xa36b[8]}${life}${_0xa36b[9]}${chance}${_0xa36b[10]}`}else {if(number== _0x336bx9[_0xa36b[14]]){updateText(_0xa36b[20]);return}}}}}}function updateText(_0x336bxb){let _0x336bxc=10;let _0x336bxd=document[_0xa36b[22]](_0xa36b[21]);_0x336bxd[_0xa36b[7]]= _0x336bxb[_0xa36b[28]](_0xa36b[15])[_0xa36b[27]]((_0x336bxe)=>{console[_0xa36b[24]](_0x336bxe);return `${_0xa36b[25]}`+ _0x336bxe+ `${_0xa36b[26]}`})[_0xa36b[23]](_0xa36b[15]);Array[_0xa36b[34]](_0x336bxd[_0xa36b[33]])[_0xa36b[32]]((_0x336bxf,_0x336bx10)=>{setTimeout(()=>{_0x336bxf[_0xa36b[31]][_0xa36b[30]](_0xa36b[29])},_0x336bx10* 50+ _0x336bxc)})}
+const number = Math.floor(Math.random() * 100) + 1;
+//! input box
+let inputData = document.getElementById("inputData")
+let info = document.getElementById("info")
+let firstNumber = document.getElementById("firstNumber")
+let secondNumber = document.getElementById("secondNumber")
+let life = 0
+let chance = 5
+info.innerHTML = `number of attempt: ${life} <br><br> You have only have ${chance} chance`
+function guessNumber() {
+    let userInput = document.getElementById("input")
+    chance--
+    life++
+    if (chance >= 0) {
+        if (chance == 0) {
+            updateText("You have Lost")
+            info.innerHTML = `number of attempt: ${life} <br><br> You dont have any chance`
+        }
+        if (userInput.value > 100 || userInput.value < 0 || userInput.value == "") {
+            inputData.innerHTML = `Please enter a number that is lower 100 higher 0`
+            chance++
+            life--
+        }
+        else if (number > userInput.value) {
+            inputData.innerHTML = userInput.value
+            userInput.value = ""
+            inputData.style.display = "none"
+            firstNumber.innerHTML = inputData.innerHTML
+            info.innerHTML = `number of attempt: ${life} <br><br> You have only  ${chance} chance`
+        } else if (number < userInput.value) {
+            inputData.innerHTML = userInput.value
+            userInput.value = ""
+            inputData.style.display = "none"
+            secondNumber.innerHTML = inputData.innerHTML
+            info.innerHTML = `number of attempt: ${life} <br><br> You have only ${chance} chance`
+        } else if (number == userInput.value) {
+            updateText("Congratulations, You are the Best");
+            return
+        }
+    }
+}
+function updateText(text) {
+    let delay = 10;
+    let h1 = document.querySelector(".header");
+    h1.innerHTML = text
+        .split("")
+        .map(letter => {
+            console.log(letter);
+            return `<span>` + letter + `</span>`;
+        })
+        .join("");
+    Array.from(h1.children).forEach((span, index) => {
+        setTimeout(() => {
+            span.classList.add("wavy");
+        }, index * 50 + delay);
+    });
+}
+
