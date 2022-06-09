@@ -14,10 +14,12 @@ function guessNumber() {
     if (chance >= 0) {
         if (chance == 0) {
             updateText("You have Lost")
-            info.innerHTML = `number of attempt: ${life} <br><br> You dont have any chance`
+            info.innerHTML = `number of attempt: ${life} <br><br> You dont have any chances`
         }
-        if (userInput.value > 100 || userInput.value < 0 || userInput.value == "") {
+        else if (userInput.value > 100 || userInput.value < 0 || userInput.value == "") {
             inputData.innerHTML = `Please enter a number that is lower 100 higher 0`
+            inputData.style.display = "block"
+            
             chance++
             life--
         }
