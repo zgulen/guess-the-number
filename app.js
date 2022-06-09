@@ -6,7 +6,7 @@ let firstNumber = document.getElementById("firstNumber")
 let secondNumber = document.getElementById("secondNumber")
 let life = 0
 let chance = 5
-info.innerHTML = `number of attempt: ${life} <br><br> You have only have ${chance} chance`
+info.innerHTML = `number of attempt: ${life} <br><br> You only have ${chance} chance`
 function guessNumber() {
     let userInput = document.getElementById("input")
     chance--
