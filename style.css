@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 body{
     height: calc(100vh - 4rem);
@@ -17,6 +17,12 @@ body{
 }
 .header{
     color: white;
+    text-shadow: 3px 3px 5px black;
+    margin-bottom: 1rem;
+}
+#info{
+  color: black;
+  text-shadow: 2px 2px 4px black;
 }
 #input{
     width: 25vw;
@@ -47,4 +53,11 @@ body{
     100% {
       top: 0px;
     }
+  }
+
+  button{
+    background: red;
+    margin: 1.5rem .5rem;
+    padding: .5rem .5rem;
+    color: aliceblue;
   }
